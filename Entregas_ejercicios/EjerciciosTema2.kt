@@ -61,15 +61,18 @@ fun ejer5(grados: Double){
     convierta grados Fahrenheit a Celsius.*/
 
     var cambio:Double = (grados * 9/5 +32)
-    println("$grados grados Celsius son $cambio grados Fahrenheit")
 
+}
 
-
+fun ejer5_2(grados: Double){
+    var cambio: Double =  ((grados - 32) * 5/9)
+    println("$grados grados Fahrenheit son "+ "%.2f".format(cambio)+ " grados Celsius")
 }
 
 fun main(){
     ejer4InformacionPersonal("Frodo", 12, "Granada")
     ejer5(12.3)
+    ejer5_2(100.2)
 
 }
 
