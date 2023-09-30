@@ -55,18 +55,22 @@ fun ejer4InformacionPersonal (nom:String, edad:Int, ciudad:String){
 // El double es para el tipo que devolvemos en el return
 /*fun ejer5(grados: Double): Double{*/
 
-fun ejer5(grados: Double){
+fun ejer5(grados: Double): Double{
 
     /*Escribe una función que convierta grados Celsius a Fahrenheit. Luego, escribe otra función que
     convierta grados Fahrenheit a Celsius.*/
 
     var cambio:Double = (grados * 9/5 +32)
+    return cambio
 
 }
 
-fun ejer5_2(grados: Double){
+fun ejer5_2(grados: Double) :Double{
     var cambio: Double =  ((grados - 32) * 5/9)
-    println("$grados grados Fahrenheit son "+ "%.2f".format(cambio)+ " grados Celsius")
+
+    /*println("$grados grados Fahrenheit son "+ "%.2f".format(cambio)+ " grados Celsius")*/
+    
+    return cambio
 }
 
 fun main(){
