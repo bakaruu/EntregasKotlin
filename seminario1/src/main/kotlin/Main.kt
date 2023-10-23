@@ -2,7 +2,17 @@ fun main(args: Array<String>) {
 
 
     //Ejercicio1
-    
+
+    val lista= listOf(1,2,3,4)
+    //para probar con una lista vacia
+    val listaVacia = listOf<Int>()
+
+    if (numeroMax(listaVacia) != null) {
+        println("El número máximo es: ${numeroMax(listaVacia)}")
+    } else {
+        println("La lista está vacía, no hay máximo.")
+    }
+
 
     //Ejercicio1
     //Ejercicio2
