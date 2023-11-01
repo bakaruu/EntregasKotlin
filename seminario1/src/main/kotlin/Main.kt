@@ -72,10 +72,15 @@ fun main(args: Array<String>) {
 
     //Ejercicio10
 //        println(fibonacci(30))
+        
     //Ejercicio11
 //        primoRelativo(15, 28)
+
     //Ejercicio12
+//        capicua(1221)
+
     //Ejercicio13
+
     //Ejercicio14
     //Ejercicio15
     //Ejercicio16
