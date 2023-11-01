@@ -6,3 +6,11 @@
 // in: a  -> out:   <a></a>
 // in: div.oferta  -> out: <div class=“oferta”></div>
 // In: div.coche#VWPolo  ->  out: <div class=“coche” id=“VWPolo”></div>
+
+
+fun emmetCambio(texto: String){
+    
+
+
+
+}

@@ -82,7 +82,19 @@ fun main(args: Array<String>) {
     //Ejercicio13
 
     //Ejercicio14
+//        mosaico(6)
+
     //Ejercicio15
+        var enteros = intArrayOf(1,2,3,4,5)
+        var enteros2 = intArrayOf(0,2,4,6,5)
+
+        val resultado = arrayBol(enteros, enteros2)
+
+        for (elemento in resultado){
+                println(elemento)
+
+        }
+
     //Ejercicio16
     //Ejercicio17
     //Ejercicio18
