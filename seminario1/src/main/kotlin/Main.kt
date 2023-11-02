@@ -85,20 +85,33 @@ fun main(args: Array<String>) {
 //        mosaico(6)
 
     //Ejercicio15
-        var enteros = intArrayOf(1,2,3,4,5)
-        var enteros2 = intArrayOf(0,2,4,6,5)
-
-        val resultado = arrayBol(enteros, enteros2)
-
-        for (elemento in resultado){
-                println(elemento)
-
-        }
+//        var enteros = intArrayOf(1,2,3,4,5)
+//        var enteros2 = intArrayOf(0,2,4,6,5)
+//
+//        val resultado = arrayBol(enteros, enteros2)
+//
+//        for (elemento in resultado){
+//                println(elemento)
+//
+//        }
 
     //Ejercicio16
+//        val listaEnteros = listOf(1,2,3,4,5,6)
+//        println(productoLista(listaEnteros))
+
+
     //Ejercicio17
+//        val listaEnteros = listOf(1,2,3,4,5,6)
+//        val numerosPares = soloPares(listaEnteros)
+//        println(numerosPares)
+
     //Ejercicio18
+//        println("Es numero primo?: " + esPrimo(479))
+
     //Ejercicio19
+        val cadena = "Hola como estamos, que tal va el dia"
+        val nueva = eliminaVocales(cadena)
+        println(nueva)
     //Ejercicio20
     //Ejercicio21
     //Ejercicio22
