@@ -112,12 +112,24 @@ fun main(args: Array<String>) {
 //        val cadena = "Hola como estamos, que tal va el dia"
 //        val nueva = eliminaVocales(cadena)
 //        println(nueva)
+
     //Ejercicio20
 //        println(factorialN(5))
+
     //Ejercicio21
+//        val cadena = "Hola como estamos?"
+//        println(cadenaInvertida(cadena))
 
     //Ejercicio22
+
+//        println(numPerfecto(496))
+    //Ejercicio23
+
+//        println(numeroNarcisista(370))
+
     //Ejercicio24
+        val matriz = arrayOf(arrayOf(1,2,3,4), arrayOf(2,3,4,5))
+        println("El numero mas grande es: " + numMasGrande(matriz))
     //Ejercicio25
     //Ejercicio26
     //Ejercicio27
