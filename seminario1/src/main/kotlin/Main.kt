@@ -128,10 +128,17 @@ fun main(args: Array<String>) {
 //        println(numeroNarcisista(370))
 
     //Ejercicio24
-        val matriz = arrayOf(arrayOf(1,2,3,4), arrayOf(2,3,4,5))
-        println("El numero mas grande es: " + numMasGrande(matriz))
+//        val matriz = arrayOf(arrayOf(1,2,3,4), arrayOf(2,3,4,5))
+//        println("El numero mas grande es: " + numMasGrande(matriz))
+
     //Ejercicio25
+
+//        val matriz = arrayOf(arrayOf(1,2,-2,4), arrayOf(2,3,4,5))
+//        println("El numero mas pequeño es: " + numMasPeque(matriz))
+
     //Ejercicio26
+
+
     //Ejercicio27
     //Ejercicio28
     //Ejercicio29
