@@ -109,11 +109,13 @@ fun main(args: Array<String>) {
 //        println("Es numero primo?: " + esPrimo(479))
 
     //Ejercicio19
-        val cadena = "Hola como estamos, que tal va el dia"
-        val nueva = eliminaVocales(cadena)
-        println(nueva)
+//        val cadena = "Hola como estamos, que tal va el dia"
+//        val nueva = eliminaVocales(cadena)
+//        println(nueva)
     //Ejercicio20
+//        println(factorialN(5))
     //Ejercicio21
+
     //Ejercicio22
     //Ejercicio24
     //Ejercicio25
