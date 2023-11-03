@@ -7,7 +7,6 @@ fun esPrimo(numero: Int): Boolean {
 
     }
 
-
     if(numero <= 1 || numero % 2 == 0 || numero % 3 == 0){
         return false
 

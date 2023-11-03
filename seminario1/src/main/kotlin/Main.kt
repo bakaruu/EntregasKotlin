@@ -55,7 +55,6 @@ fun main(args: Array<String>) {
 //    println("La cadena '$subcadena' aparece $veces veces en el texto.")
 
 
-
     //Ejercicio7
 
 //        val texto = "me llamo chicote y me gusta mucho el pan con lomo"
@@ -72,7 +71,7 @@ fun main(args: Array<String>) {
 
     //Ejercicio10
 //        println(fibonacci(30))
-        
+
     //Ejercicio11
 //        primoRelativo(15, 28)
 
@@ -106,7 +105,7 @@ fun main(args: Array<String>) {
 //        println(numerosPares)
 
     //Ejercicio18
-//        println("Es numero primo?: " + esPrimo(479))
+    //println("Es numero primo?: " + esPrimo(11))
 
     //Ejercicio19
 //        val cadena = "Hola como estamos, que tal va el dia"
@@ -137,11 +136,20 @@ fun main(args: Array<String>) {
 //        println("El numero mas pequeño es: " + numMasPeque(matriz))
 
     //Ejercicio26
-
+    // val lista = listOf<String>("hola", "adios", "cuento")
+    //println(palMasLarga(lista))
 
     //Ejercicio27
+    //  val lista = listOf<String>("sol", "adios", "cuento")
+    //  println(masCorta(lista))
+
     //Ejercicio28
+    //val cadena = "34343434 343434"
+    //println(soloTexto(cadena))
     //Ejercicio29
+    val cadena1 = "a hola"
+    val cadena2 = "aloh a"
+    println(anagrama(cadena1, cadena2))
     //Ejercicio30
     //Ejercicio31
     //Ejercicio32
