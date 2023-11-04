@@ -160,15 +160,15 @@ fun main(args: Array<String>) {
 
     //Ejercicio32
 
-    val lista1 = listOf(1,2,3,4)
-    val lista2 = listOf("Uno", "Dos", "Tres", "Cuatro")
-
-    var dicc = diccionario(lista1, lista2)
-
-    for ((clave, valor) in dicc){
-        println("Clave: $clave, valor: $valor ")
-
-    }
+//    val lista1 = listOf(1,2,3,4)
+//    val lista2 = listOf("Uno", "Dos", "Tres", "Cuatro")
+//
+//    var dicc = diccionario(lista1, lista2)
+//
+//    for ((clave, valor) in dicc){
+//        println("Clave: $clave, valor: $valor ")
+//
+//    }
 
     //con foreach.
 //    dicc.forEach { (clave, valor) ->
@@ -177,6 +177,8 @@ fun main(args: Array<String>) {
 
 
     //Ejercicio33
+//    val numero = 5
+//    println(decToBin(numero))
     //Ejercicio34
     //Ejercicio35
 
