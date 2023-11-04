@@ -146,13 +146,36 @@ fun main(args: Array<String>) {
     //Ejercicio28
     //val cadena = "34343434 343434"
     //println(soloTexto(cadena))
+
     //Ejercicio29
-    val cadena1 = "a hola"
-    val cadena2 = "aloh a"
-    println(anagrama(cadena1, cadena2))
+//    val cadena1 = "a hola"
+//    val cadena2 = "aloh a"
+//    println(anagrama(cadena1, cadena2))
+
     //Ejercicio30
+//        println(numTriangular(3))
     //Ejercicio31
+//       val lista= listOf(1,2,3,4)
+//        println(duplicarEle(lista))
+
     //Ejercicio32
+
+    val lista1 = listOf(1,2,3,4)
+    val lista2 = listOf("Uno", "Dos", "Tres", "Cuatro")
+
+    var dicc = diccionario(lista1, lista2)
+
+    for ((clave, valor) in dicc){
+        println("Clave: $clave, valor: $valor ")
+
+    }
+
+    //con foreach.
+//    dicc.forEach { (clave, valor) ->
+//        println("Clave: $clave, Valor: $valor")
+//    }
+
+
     //Ejercicio33
     //Ejercicio34
     //Ejercicio35
