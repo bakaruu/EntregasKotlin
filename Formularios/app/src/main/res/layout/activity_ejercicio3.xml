@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejercicio3">
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CapaCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginTop="20dp"
+        android:hint="Correo"
+        android:focusable="true"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/correo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CapaPass"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        app:passwordToggleEnabled="true"
+        android:hint="Password"
+
+        app:counterEnabled="true"
+        app:layout_constraintTop_toBottomOf="@id/CapaCorreo">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Pass"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CapaNombre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        app:layout_constraintTop_toBottomOf="@id/CapaPass"
+        app:layout_constraintStart_toEndOf="@id/CapaCP"
+        android:focusable="true"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Nombre"
+
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            android:inputType="textPersonName|textCapWords"
+            android:text="Nombre"
+            app:layout_constraintEnd_toStartOf="@id/CapaNombre"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CapaCP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="200dp"
+        app:layout_constraintTop_toBottomOf="@id/CapaPass"
+        app:layout_constraintStart_toEndOf="parent"
+        android:focusable="true">
+
+
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Datos"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:focusable="false"
+            android:text="CP"
+            app:layout_constraintEnd_toStartOf="@id/Nombre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/CapaFecha"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/Datos"
+        android:layout_marginTop="300dp"
+        android:hint="Fecha nacimiento"
+
+        tools:ignore="NotSibling">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/Fecha"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+
+            app:layout_constraintTop_toTopOf="parent" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/insertar"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/guia1"
+        android:text="INSERTAR"
+        >
+
+    </Button>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guia1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

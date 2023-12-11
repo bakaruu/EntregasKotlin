@@ -1,66 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="16dp"
+    tools:context="MainActivity">
+<Button
+    app:layout_constraintTop_toTopOf="parent"
+    android:id="@+id/formulario1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Formulario 1"
+    android:layout_marginTop="16dp"
 
+    />
 
+<Button
+android:id="@+id/formulario2"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Formulario 2"
+android:layout_marginTop="16dp"
+app:layout_constraintTop_toBottomOf="@id/formulario1"/>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Nombre"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20dp"
-        app:errorEnabled="true"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputNombre"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="Nombre"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Edad"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Nombre"
-        android:layout_marginTop="10dp"
-        >
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputEdad"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="number"
-            android:hint="Edad"
-            />
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-
-    <Button
-        android:id="@+id/insertar"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/Edad"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:text="Insertar"
-        android:layout_marginTop="10dp"
-
-        />
+<Button
+android:id="@+id/formulario3"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:text="Formulario 3"
+android:layout_marginTop="16dp"
+app:layout_constraintTop_toBottomOf="@id/formulario2"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
