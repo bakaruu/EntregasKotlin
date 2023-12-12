@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ExamenAlvaroCastro</string>
+
+    <string-array name="tipos_pokemon">
+        <item>Agua</item>
+        <item>Fuego</item>
+        <item>Electro</item>
+        <item>Planta</item>
+        <item>Psiquico</item>
+        <!-- Agrega más tipos según sea necesario -->
+    </string-array>
+</resources>
