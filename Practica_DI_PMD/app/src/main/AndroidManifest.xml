@@ -28,6 +28,9 @@
         <activity
             android:name=".CalculaTron"
             android:exported="false" />
+        <activity
+            android:name=".ResumenCalculatron"
+            android:exported="false" />
 
     </application>
 

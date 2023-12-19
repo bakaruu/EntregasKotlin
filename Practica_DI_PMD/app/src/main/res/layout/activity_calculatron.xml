@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideNumpad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.58" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiaIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.735"
+        app:layout_constraintTop_toBottomOf="@id/guideNumpad" />
+
+
+    <Button
+        android:id="@+id/boton0"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/botonC"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/boton1" />
+
+    <Button
+        android:id="@+id/botonC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guiaIntro"
+        app:layout_constraintStart_toEndOf="@id/boton0"
+
+        app:layout_constraintTop_toBottomOf="@+id/boton3" />
+
+    <Button
+        android:id="@+id/botonIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="190dp"
+        android:text="INTRO"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guiaIntro"
+        app:layout_constraintTop_toBottomOf="@id/botonCE" />
+
+
+    <Button
+        android:id="@+id/botonCE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CE"
+        app:layout_constraintBottom_toTopOf="@id/botonIntro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guiaIntro"
+        app:layout_constraintTop_toBottomOf="@id/guideNumpad" />
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@id/boton0"
+        app:layout_constraintEnd_toStartOf="@id/boton2"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/boton4" />
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@id/boton0"
+        app:layout_constraintEnd_toStartOf="@id/boton3"
+        app:layout_constraintStart_toEndOf="@id/boton1"
+
+        app:layout_constraintTop_toBottomOf="@+id/boton5" />
+
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@id/botonC"
+        app:layout_constraintEnd_toStartOf="@id/guiaIntro"
+        app:layout_constraintStart_toEndOf="@id/boton2"
+
+        app:layout_constraintTop_toBottomOf="@+id/boton6" />
+
+    <Button
+        android:id="@+id/boton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@id/boton1"
+        app:layout_constraintEnd_toStartOf="@+id/boton5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/boton7" />
+
+    <Button
+        android:id="@+id/boton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@id/boton2"
+        app:layout_constraintEnd_toStartOf="@id/boton6"
+        app:layout_constraintStart_toEndOf="@id/boton4"
+        app:layout_constraintTop_toBottomOf="@+id/boton8" />
+
+    <Button
+        android:id="@+id/boton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@id/boton3"
+        app:layout_constraintEnd_toStartOf="@id/guiaIntro"
+        app:layout_constraintStart_toEndOf="@id/boton5"
+
+        app:layout_constraintTop_toBottomOf="@+id/boton9" />
+
+
+    <Button
+        android:id="@+id/boton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@id/boton4"
+        app:layout_constraintEnd_toStartOf="@+id/boton8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/guideNumpad" />
+
+    <Button
+        android:id="@+id/boton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@id/boton5"
+        app:layout_constraintEnd_toStartOf="@id/boton9"
+        app:layout_constraintStart_toEndOf="@id/boton7"
+        app:layout_constraintTop_toBottomOf="@id/guideNumpad" />
+
+    <Button
+        android:id="@+id/boton9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@id/boton6"
+        app:layout_constraintEnd_toStartOf="@id/guiaIntro"
+        app:layout_constraintStart_toEndOf="@id/boton8"
+        app:layout_constraintTop_toBottomOf="@id/guideNumpad" />
+
+
+    <LinearLayout
+        android:id="@+id/llAciertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@id/guideNumpad"
+        app:layout_constraintEnd_toStartOf="@+id/guiaAciertos"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2">
+
+        <TextView
+            android:id="@+id/acertadas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acertadas: 0"
+
+            />
+
+        <TextView
+            android:id="@+id/falladas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Falladas: 0" />
+
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiaAciertos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.26"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvTiempo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Tiempo restante: 60"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/guiaAciertos"
+        app:layout_constraintEnd_toStartOf="@+id/guiaIntro"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/tvOperacion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Introduce: "
+        android:textSize="44sp"
+        android:inputType="none"
+        app:layout_constraintBottom_toTopOf="@+id/guideNumpad"
+        app:layout_constraintStart_toEndOf="@+id/guiaAciertos"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_marginLeft="20dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/etRespuesta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideNumpad"
+        app:layout_constraintStart_toEndOf="@+id/tvOperacion1"
+        android:hint="0"
+        android:textSize="44sp"
+        android:inputType="none"
+        app:layout_constraintVertical_bias="0.2"
+        android:background="@android:color/transparent"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tvOperacion2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Introduce: "
+        android:textSize="44sp"
+        android:inputType="none"
+        app:layout_constraintStart_toEndOf="@+id/guiaAciertos"
+        app:layout_constraintTop_toBottomOf="@+id/tvOperacion1"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/etRespuesta2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etRespuesta1"
+        app:layout_constraintStart_toEndOf="@+id/tvOperacion2"
+        android:hint="0"
+        android:textSize="44sp"
+        android:inputType="number"
+        app:layout_constraintVertical_bias="0.2"
+        android:background="@android:color/transparent"
+        />
+
+
+    <TextView
+        android:id="@+id/tvOperacion3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Introduce: "
+        android:textSize="44sp"
+        android:inputType="none"
+        app:layout_constraintStart_toEndOf="@+id/guiaAciertos"
+        app:layout_constraintTop_toBottomOf="@+id/tvOperacion2"
+        app:layout_constraintVertical_bias="0.2"
+        android:layout_marginLeft="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/etRespuesta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/etRespuesta2"
+        app:layout_constraintStart_toEndOf="@+id/tvOperacion3"
+        android:hint="0"
+        android:textSize="44sp"
+        android:inputType="number"
+        app:layout_constraintVertical_bias="0.2"
+        android:background="@android:color/transparent"
+        />
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

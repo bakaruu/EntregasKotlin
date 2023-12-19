@@ -37,10 +37,9 @@ class MemoryTron : AppCompatActivity() {
 
     )
     var mazoDesechable = mazoCartas.copyOf()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.memory_tron)
+        setContentView(R.layout.activity_memorytron)
 
         matrizTablero = Array(3) { Array(4) { ImageView(this) } }
         contador = findViewById(R.id.textoVida)
@@ -127,7 +126,7 @@ class MemoryTron : AppCompatActivity() {
 
                 }
             }else{
-                Toast.makeText(this, "HAS PERDIDO !, reinicia para volver a Jugar ", Toast.LENGTH_SHORT).show()
+
 
             }
 
