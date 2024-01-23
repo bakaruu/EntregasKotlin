@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seminar3">
+
+    <EditText
+        android:id="@+id/etTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el título de la notificación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/etTexto"
+
+        />
+
+    <EditText
+        android:id="@+id/etTexto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el texto de la notificación"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTitulo"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerIcono"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerIcono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Seleccione el icono"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTexto"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerImagen"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerImagen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Seleccione la imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerIcono"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBotones"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"
+        />
+
+
+    <!-- Puedes agregar dinámicamente botones según el número ingresado -->
+    <Button
+        android:id="@+id/btnAgregarBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineBotones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tvBotonesCantidad"
+        android:text="add"
+
+        />
+
+    <TextView
+        android:id="@+id/tvBotonesCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/btnAgregarBotones"
+        app:layout_constraintEnd_toStartOf="@+id/btnQuitarBotones"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineBotones"
+        android:text="0"
+        android:textSize="30dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnQuitarBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineBotones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvBotonesCantidad"
+        android:text="del"
+
+
+
+        />
+
+    <Button
+        android:id="@+id/btnEnviarNotificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enviar Notificación"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
