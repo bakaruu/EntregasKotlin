@@ -48,30 +48,54 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerIcono"
-        app:layout_constraintBottom_toTopOf="@+id/etNumeroBotones"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBotones"
         />
 
-    <EditText
-        android:id="@+id/etNumeroBotones"
-        android:layout_width="0dp"
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBotones"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Número de botones"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinnerImagen"
-        app:layout_constraintBottom_toTopOf="@+id/layoutBotones"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6"
         />
+
 
     <!-- Puedes agregar dinámicamente botones según el número ingresado -->
-    <LinearLayout
-        android:id="@+id/layoutBotones"
-        android:layout_width="0dp"
+    <Button
+        android:id="@+id/btnAgregarBotones"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineBotones"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etNumeroBotones"
-        app:layout_constraintBottom_toTopOf="@+id/btnEnviarNotificacion"
+        app:layout_constraintEnd_toStartOf="@+id/tvBotonesCantidad"
+        android:text="add"
+
+        />
+
+    <TextView
+        android:id="@+id/tvBotonesCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/btnAgregarBotones"
+        app:layout_constraintEnd_toStartOf="@+id/btnQuitarBotones"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineBotones"
+        android:text="0"
+        android:textSize="30dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnQuitarBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineBotones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvBotonesCantidad"
+        android:text="del"
+
+
+
         />
 
     <Button

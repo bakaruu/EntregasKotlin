@@ -43,8 +43,7 @@ class Seminar3 : AppCompatActivity() {
         etTexto = findViewById(R.id.etTexto)
         spinnerIcono = findViewById(R.id.spinnerIcono)
         spinnerImagen = findViewById(R.id.spinnerImagen)
-        etNumeroBotones = findViewById(R.id.etNumeroBotones)
-        layoutBotones = findViewById(R.id.layoutBotones)
+
         btnEnviarNotificacion = findViewById(R.id.btnEnviarNotificacion)
 
         // Configuración de los spinners (reemplaza con tus datos reales)
