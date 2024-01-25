@@ -1,5 +1,6 @@
 package com.example.ejercicios_tema9_pmd
 
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -19,10 +20,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        ejercicio1 = binding.btnEjercicio1
+        ejercicio1 = binding.btnEjercicio1y2
 
         ejercicio1.setOnClickListener {
-            val intent = Intent(this, Ejercicio1::class.java)
+            val intent = Intent(this, Ejercicio1y2::class.java)
+            startActivity(intent)
+        }
+
+        ejercicio2 = binding.btnEjercicio3
+
+        ejercicio2.setOnClickListener {
+            val intent = Intent(this, Ejercicio3::class.java)
             startActivity(intent)
         }
 
